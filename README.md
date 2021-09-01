@@ -20,7 +20,7 @@ Para usar a aplicação, siga os passos:
 
 1. Clone o repositório:
     ```
-    git clone https://github.com/danielptj/centro-nucom.git
+    git clone https://github.com/danielptj/centronucom.git
     ```
 2. Dentro do projeto, instale as dependências:
     ```
