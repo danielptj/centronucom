@@ -1,0 +1,11 @@
+#modal {
+	height: 480px;
+	width: 853px;
+}
+  
+@media screen and (max-height: 768px) {
+	#modal {
+	height: 360px;
+	width: 640px;
+	}
+}

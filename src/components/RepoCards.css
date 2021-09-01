@@ -1,0 +1,17 @@
+.Container {
+  background-color: #FFFFFF;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.wrapper {
+  padding: 0 10%;
+}
+
+.filter {
+  display: flex;
+}
+
+.custom-select{
+  height:4rem;
+}
