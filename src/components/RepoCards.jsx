@@ -51,7 +51,6 @@ export function RepoCards() {
     const fuse = new Fuse(books, {
       keys: ["title", "author"],
       threshold: 0.2,
-      maxPatternLength: 120
     });
 
     var result = fuse.search(pattern);

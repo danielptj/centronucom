@@ -6,17 +6,17 @@ import './RepoCardItem.css';
 export const BasicTree = () => {
   const tree = {
     step1: ['step2'],
-    step2: ['step3', 'step4', 'step5', 'step6', 'step7'],
+    step2: ['step1','step3', 'step4', 'step5', 'step6', 'step7'],
     step3: [],
     step4: [],
-    step5: ['step7', 'step8', 'step9', 'step10'],
+    step5: ['step1','step7', 'step8', 'step9', 'step10'],
     step6: [],
     step7: [],
-    step8: ['step12', 'step13', 'step14'],
+    step8: ['step1', 'step12', 'step13', 'step14'],
     step9: [],
     step10: [],
     step11: [],
-    step12: [],
+    step12: ['step1'],
     step13: [],
     step14: [],
   }; 
@@ -44,7 +44,7 @@ export const BasicTree = () => {
             <h1>Selecione um tema</h1>
             <br/> <br/>
             <Controls>
-              {({ destinations: { step3, step4, step5, step6, step7 } }) => (
+              {({ destinations: { step1, step3, step4, step5, step6, step7 } }) => (
                 <div>
                   <button onClick={step3}>Pobreza</button>
                   <br/>
@@ -55,6 +55,8 @@ export const BasicTree = () => {
                   <button onClick={step6}>Juventude</button>
                   <br/>
                   <button onClick={step7}>Condição Feminina</button>
+                  <br/><br/>
+                  <button onClick={step1}> <i class="fas fa-undo-alt"></i>  Retornar</button>
                 </div>
               )}
             </Controls>
@@ -65,7 +67,7 @@ export const BasicTree = () => {
             <h1>Selecione um tópico</h1>
             <br /> <br/>
             <Controls>
-              {({ destinations: { step8, step9, step10, step11 } }) => (
+              {({ destinations: { step1, step8, step9, step10, step11 } }) => (
                 <div>
                   <button onClick={step8}>Educação</button>
                   <br/>
@@ -74,6 +76,8 @@ export const BasicTree = () => {
                   <button onClick={step10}>Pobreza Rural</button>
                   <br/>
                   <button onClick={step11}>Inovação</button>
+                  <br/><br/>
+                  <button onClick={step1}> <i class="fas fa-undo-alt"></i>  Retornar</button>
                 </div>
               )}
             </Controls>
@@ -84,13 +88,15 @@ export const BasicTree = () => {
             <h1>Selecione outro tópico</h1>
             <br /> <br/>
             <Controls>
-              {({ destinations: { step12, step13, step14 } }) => (
+              {({ destinations: { step1, step12, step13, step14 } }) => (
                 <div>
                   <button onClick={step12}>Ética</button>
                   <br/>
                   <button onClick={step13}>Saúde Mental</button>
                   <br/>
                   <button onClick={step14}>Fatalismo</button>
+                  <br/><br/>
+                  <button onClick={step1}> <i class="fas fa-undo-alt"></i>  Retornar</button>
                 </div>
               )}
             </Controls>
@@ -131,6 +137,12 @@ export const BasicTree = () => {
                 </div>
               </a>
             </ul>
+            <br/><br/><br/><br/>
+            <Controls>
+              {({ destinations: { step1 } }) => (
+            <button onClick={step1}> <i class="fas fa-undo-alt"></i>  Recomeçar</button>
+            )}
+            </Controls>
           </div>
         </Step>
       </Wizard>

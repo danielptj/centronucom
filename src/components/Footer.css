@@ -65,6 +65,15 @@
     object-fit: cover;
 }
 
+.footer-link-logo > a {
+  color: #fff;
+}
+
+.footer-link-logo > a:hover{
+  color: #03A34A;
+  transition: 0.3s ease-out;
+}
+
 .footer-input::placeholder {
   color: #b1b1b1;
 }

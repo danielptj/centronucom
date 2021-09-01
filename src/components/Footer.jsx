@@ -8,6 +8,12 @@ export function Footer() {
         <div className='footer-link-wrapper'>
           <div className='footer-link-logo'>
             <img src='images/logo.svg' alt="Logo" />
+            <br/><br/><br/><br/>
+            <a 
+              href="https://github.com/danielptj/centronucom"
+              target='_blank'
+              rel="noopener noreferrer"
+            > Disponível no GitHub </a>
           </div>
           <div className='footer-link-items'>
             <h2>Fale Conosco</h2>
@@ -17,7 +23,6 @@ export function Footer() {
             <p>CEP: 60020-181</p>
             <p>(85) 3366.7729</p>
             <p>nucomufc@yahoo.com.br</p>
-            <br/>
             <a 
               href="https://linktr.ee/nucomufc"
               target='_blank'
