@@ -1,5 +1,5 @@
 import React from 'react';
-import './search.css';
+import './Search.css';
 import { FaSearch } from 'react-icons/fa';
 
 export const Search = ({onChange, placeholder}) => {
