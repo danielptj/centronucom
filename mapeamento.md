@@ -20,7 +20,7 @@
         Recommender.css
             Estilização do recomendador.
         RecommenderFlow
-         Criação do fluxo de recomendações e conteúdo da seção em geral.
+            Criação do fluxo de recomendações e conteúdo da seção em geral.
         RecommenderHero
             Criação da Hero section da aba de recomendações.
         RepoCardItem
